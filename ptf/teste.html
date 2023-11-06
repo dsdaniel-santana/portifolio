@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accordion">
+        <h5 class="w3-opacity"><b>MCM - Main on Construction</b></h5>
+        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dez 2018 - Mar 2020</h6>
+        <p>Projeto Management</p>
+        <button class="accordion-button">Mostrar Conteúdo</button>
+        <div class="accordion-content">
+          
+          <ul>
+            <li>Elaborar e planejar cronogramas.</li>
+            <li>Identificar, fazer a gestão e resolver problemas.</li>
+            <li>Gerenciamento e execução das atividades realizadas.</li>
+            <li>Definir e obter estratégias adequadas.</li>
+            <li>Divulgar as informações para as partes interessadas.</li>
+          </ul>
+          <p class="w3-text-teal"><b>Principais resultados:</b> O lucro líquido dos projetos que eu atendia teve um crescimento expressivo no período de 1 ano. Algumas tarefas foram organizadas de forma diferente do que eram realizadas e isso teve um reflexo positivo no trabalho desenvolvido.</p>
+        </div>
+      </div>
+      
+      <script>
+        // Adicionar um evento de clique ao botão do acordeão
+        var accordionButtons = document.querySelectorAll('.accordion-button');
+      
+        accordionButtons.forEach(function(button) {
+          button.addEventListener('click', function() {
+            this.classList.toggle('active');
+            var content = this.nextElementElement;
+      
+            // Encontre o elemento .accordion-content
+            var content = this.parentElement.querySelector('.accordion-content');
+      
+            if (content.style.display === 'block') {
+              content.style.display = 'none';
+            } else {
+              content.style.display = 'block';
+            }
+          });
+        });
+      </script>
+      
+      
+</body>
+
+</html>
